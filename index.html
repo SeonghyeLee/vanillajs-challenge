@@ -3,23 +3,30 @@
     <head>
         <title>Something</title>
         <meta charset="utf-8"/>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,500&display=swap" rel="stylesheet">
         <link href="index.css" rel="stylesheet"/>
     </head>
     <body>
         <div class="js-clock">
             <h1 class="js-title">00:00</h1>
+            <span class="js-weather"></span>
         </div>
-        <form class="js-form form">
-            <input type="text" placeholder="Where is your name?" />
-        </form>
-        <h4 class="js-greetings greetings"></h4>
+        <div class="text-field">
+            <form class="js-form form">
+                <input class="name" type="text" placeholder="YOUR NAME"/>
+            </form>
+                <h4 class="js-greetings greetings"></h4>
+
         <form class="js-toDoForm">
-            <input type="text" placeholder="write to do" />
+            <input class="whatToDo" type="text" placeholder="YOUR TASKS" />
         </form>
+        </div>
         <ul class="js-toDoList">
         </ul>
         <script src="clock.js"></script>
         <script src="greeting.js"></script>
         <script src="todo.js"></script>
+        <script src="bg.js"></script>
+        <script src="weather.js"></script>
     </body>
 </html>
